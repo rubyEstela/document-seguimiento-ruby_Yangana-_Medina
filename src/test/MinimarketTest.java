@@ -1,5 +1,6 @@
 package test;
 
+import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
@@ -16,13 +17,24 @@ class MinimarketTest {
 	
 	
 	@Test
-	public void addClient() throws AdultException  {
-		setUpScenari2();	
-		String currVal = cls.getDocumentNumber();
-		String newVal =" 1234";
-		cls.getDocumentNumber();			
-		fail("");
-	}
-	
+	public void addClient()  {
+		setUpScenari2();
+		
+		int typeDocument =1;
+		 int documentNumbert = 1151;
+		 
+		 int esperado = typeDocument+documentNumbert;
+		 
+		 assertTrue(esperado,cls.getDocumentNumber()+cls.getTypeDocument());
+		
+		
+		
 
+}
+
+
+	private void assertTrue(int esperado, String string) {
+		// TODO Auto-generated method stub
+		
+	}
 }
