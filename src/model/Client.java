@@ -8,9 +8,9 @@ public class Client {
 	public static int CE = 4;
 
 	private int typeDocument;
-	private int documentNumber;
+	private String documentNumber;
 
-	public Client(int typeDocument, int documentNumber) {
+	public Client(int typeDocument, String documentNumber) {
 
 		this.typeDocument = typeDocument;
 		this.documentNumber = documentNumber;
@@ -24,12 +24,12 @@ public class Client {
 		this.typeDocument = typeDocument;
 	}
 
-	public int getDocumentNumber() {
+	public String getDocumentNumber() {
 		return documentNumber;
 	}
 
-	public void setDocumentNumber(int documentNumber) {
-		this.documentNumber = documentNumber;
+	public String setDocumentNumber(String documentNumber) {
+		return this.documentNumber = documentNumber;
 	}
 
 	public static int getTI() {
